@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Socket Quote Form</title>
+</head>
+<body>
+    <h1>Socket Quote Form</h1>
+    <form action="socketQuote" method="POST">
+        <label for="socketType">Socket Type:</label>
+        <select id="socketType" name="socketType" required>
+            <option value="Type A">Type A</option>
+            <option value="Type B">Type B</option>
+            <option value="Type C">Type C</option>
+        </select><br><br>
+
+        <label for="quantity">Quantity:</label>
+        <input type="text" id="quantity" name="quantity" required><br><br>
+
+        <label for="custName">Full Name:</label>
+        <input type="text" id="custName" name="custName" required><br><br>
+
+        <label for="custEmail">Email Address:</label>
+        <input type="email" id="custEmail" name="custEmail" required><br><br>
+
+        <input type="submit" value="Calculate Final Quote">
+    </form>
+</body>
+</html>
